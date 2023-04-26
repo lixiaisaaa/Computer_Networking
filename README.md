@@ -15,3 +15,9 @@ Submit your completed sub-assignment via Gradescope using the button link on ass
 
 PA1–Final: Complete Assignment
 For your final submission, you should implement the remaining required functionality in your proxy. Your final submission will be tested more thoroughly, using tests like those described in all parts (PA1-A, PA1-B, and PA1-Final). The TAs will also inspect your code for general quality and robustness, including inline documentation.
+
+PA2
+A real transport protocol would typically be implemented in the kernel of an operating system. To simplify your development, your code will execute in a simulated hardware/software environment. However, the programming interface provided to your code—i.e., the code that would call your entities from above and from below—is similar to what is done in an actual UNIX operating system. Stopping/starting of timers are also simulated, and timer interrupts will cause your timer-handling routine to be activated.
+
+PA3
+implement a Go-Back-N, unidirectional, reliable transfer of data from the A-side to the B-side, with a window size equal to 1/2 of the simulation’s seqnum_limit value. The value of seqnum_limit is passed to EntityA.__init__() and to EntityB.__init__() when the simulation starts.
