@@ -1,19 +1,16 @@
-import math
-line = input()
-plots = list(map(int, input().strip().split()))
-circular = list(map(int, input().strip().split()))
-square = list(map(int, input().strip().split()))
-house = circular[:]
-for h in square:
-   house.append((math.sqrt((h**2)+(h**2)))/2)
-house = sorted(house)
-plots = sorted(plots)
-count = 0
-while house and plots:
-   if house[-1] < plots[-1]:
-      house = house[:-1]
-      plots = plots[:-1]
-      count += 1
-   else:
-      house = house[:-1]
-print(count)
+# This is a sample Python script.
+
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
